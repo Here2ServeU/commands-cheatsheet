@@ -119,4 +119,42 @@ A practical guide to commonly used Linux commands for system management, file op
 
 ---
 
-This guide provides a quick reference for common Linux commands to help you manage files, processes, users, and system resources efficiently. Bookmark it for easy access!
+
+## Variables and Environment
+60. **`echo $VARIABLE_NAME`**: Displays the value of an environment variable.
+61. **`export VARIABLE_NAME=value`**: Sets an environment variable for the current session.
+62. **`unset VARIABLE_NAME`**: Removes an environment variable.
+
+---
+
+## Loops and Conditionals
+63. **`if [ condition ]; then ... fi`**: Executes commands based on a condition.
+64. **`for var in list; do ... done`**: Iterates over a list of items.
+65. **`while [ condition ]; do ... done`**: Loops while a condition is true.
+66. **`break`**: Exits a loop prematurely.
+67. **`continue`**: Skips the current loop iteration.
+
+---
+
+## Functions and Scripts
+68. **Defining a function**:
+    ```bash
+    my_function() {
+        echo "Hello, Bash!"
+    }
+    ```
+69. **Running a script**:
+    ```bash
+    ./script_name.sh
+    ```
+    - Make it executable with **`chmod +x script_name.sh`**.
+70. **Passing arguments to a script**:
+    - `$1, $2, ...`: Access command-line arguments in a script.
+    - **Example**:
+        ```bash
+        echo "First argument: $1"
+        ```
+
+---
+
+This guide provides a quick reference for common Linux commands to help you efficiently manage files, processes, users, and system resources. Bookmark it for easy access!
